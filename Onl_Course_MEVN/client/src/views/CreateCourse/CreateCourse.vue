@@ -114,6 +114,7 @@ export default {
 
         async handleCreateCourse() {
             this.submitNotValid();
+            this.userStore.isLoading = true;
             await this.handleUploadCloud();
             this.formCreate.teacher = this.userStore.account._id;
 
@@ -129,6 +130,7 @@ export default {
             else {
                 alert('Lỗi!!! tạo khóa học không thành công');
             }
+            this.userStore.isLoading = false;
         }
     },
 }
