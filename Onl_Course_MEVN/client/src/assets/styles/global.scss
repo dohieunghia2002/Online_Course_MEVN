@@ -1,0 +1,102 @@
+$height-header: 80px;
+$height-footer: 80px;
+$height-img-course-trash: 210px;
+
+$primary-color: rgb(0, 39, 86);
+$black-text-color: #333;
+$white-text-color: #fff;
+$white-color: #fff;
+$black-color: #222;
+$dark-color: #000;
+$green-color: rgb(2, 195, 2);
+$red-color: rgb(241, 19, 45);
+$yellow-color: rgb(226, 226, 4);
+$gray-color: rgb(145, 143, 143);
+
+.w-100 {
+    width: 100%;
+}
+
+.w-90 {
+    width: 90%;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+.w-70 {
+    width: 70%;
+}
+
+.w-60 {
+    width: 60%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-40 {
+    width: 40%;
+}
+
+.w-30 {
+    width: 30%;
+}
+
+.w-20 {
+    width: 20%;
+}
+
+.w-10 {
+    width: 10%;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.h-90 {
+    height: 90%;
+}
+
+.h-80 {
+    height: 80%;
+}
+
+.h-70 {
+    height: 70%;
+}
+
+.h-60 {
+    height: 60%;
+}
+
+.h-50 {
+    height: 50%;
+}
+
+.h-40 {
+    height: 40%;
+}
+
+.h-30 {
+    height: 30%;
+}
+
+.h-20 {
+    height: 20%;
+}
+
+.h-10 {
+    height: 10%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.separate {
+    margin-top: calc($height-header + 12px);
+}

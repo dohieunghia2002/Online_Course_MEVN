@@ -1,0 +1,36 @@
+[POST]    /auth/signup          đăng ký
+[POST]    /auth/signin          đăng nhập
+[POST]    /auth/refresh         refresh token
+[POST]    /auth/logout          đăng xuất
+[POST]    /auth/signup/teacher  cấp tài khoản giáo viên
+
+[GET]     /course/teacher/:id       tất cả khóa học của giáo viên id
+[GET]     /course/:id/lesson        lấy danh sách bài học của khóa học course x
+[GET]     /course/:id               thông tin chi tiết của khóa học id
+[GET]     /course/all               tất cả khóa học
+[GET]     /course/coming-soon       tất cả khóa học sắp ra mắt
+[GET]     /course/:id/students      học viên của khóa học id
+[GET]     /course/deleted           các khóa học đã bị teacher id xóa
+[GET]     /course/:category/stored  các khóa học theo category
+[POST]    /course/new               tạo khóa học
+[POST]    /course/complete          đánh dấu/hủy đánh dấu khóa học đã hoàn thiện
+[PUT]     /course/edit              sửa thông tin chung của khóa học
+[PUT]     /course/enroll            đăng ký học khóa học
+[PUT]     /course/student/learning  cập nhật số bài học hiện tại của học viên
+[DELETE]  /course/:id               xóa mềm khóa học
+
+[GET]     /lesson/course/:id    lấy danh sách bài học của course id
+[PUT]     /lesson/update        cập nhật danh sách bài học
+
+[GET]     /user/:id/my-courses              khóa học học viên đã đăng ký
+[GET]     /user/:id/my-courses/:idCourse    lấy tiến trình khóa học idCourse đang học của học viên id
+[GET]     /user/teacher/:id                 thông tin giáo viên id
+[GET]     /user/student/:id                 thông tin học viên id
+[GET]     /user/entire/teacher              toàn bộ giáo viên của hệ thống
+[GET]     /user/entire/student              toàn bộ học viên của hệ thống
+[GET]     /user/deleted/stored              danh sách người dùng đã bị khóa
+[PATCH]   /user/:id/avatar                  cập nhật ảnh đại diện của user id
+[PUT]     /user/teacher/edit                cập nhật thông tin giáo viên id
+[PUT]     /user/restore                     khôi phục khóa học
+[DELETE]  /user/:id                         xóa mềm user qua id
+[DELETE]  /user/:id/destroy                 xóa thật user id

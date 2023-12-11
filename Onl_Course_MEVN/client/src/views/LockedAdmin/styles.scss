@@ -1,0 +1,88 @@
+@import '../../assets/styles/global.scss';
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table {
+    margin: 1.5rem 0;
+}
+
+th {
+    font-size: 1.3rem;
+    line-height: 3.2rem;
+    color: $white-text-color;
+    background-color: $black-color;
+    opacity: 0.92;
+}
+
+td {
+    font-size: 1.2rem;
+    line-height: 3rem;
+}
+
+.table-user,
+.table-courses {
+    min-height: 58.5vh;
+}
+
+.title-page {
+    padding: 2rem 0;
+}
+
+.tab__btn {
+    padding: 8px 12px;
+    font-size: 1.2rem;
+    outline: none;
+    cursor: pointer;
+    opacity: 0.4;
+
+    &.active {
+        background-color: $primary-color;
+        color: $white-text-color;
+        opacity: 1;
+    }
+}
+
+.btn--recovery,
+.btn--destroy {
+    padding: 4px 10px;
+    color: $white-text-color;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    opacity: 1;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.6;
+    }
+}
+
+.btn--recovery {
+    background-color: rgb(252, 180, 48);
+    margin-right: 10px;
+}
+
+.btn--destroy {
+    background-color: red;
+}
+
+@media (max-width: 1023px) {
+    th {
+        font-size: 1.1rem;
+        line-height: 2.2rem;
+    }
+
+    td {
+        font-size: 1rem;
+        line-height: 2.5rem;
+    }
+
+    .btn--recovery {
+        margin-right: 0;
+    }
+}
